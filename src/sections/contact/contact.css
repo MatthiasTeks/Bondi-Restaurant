@@ -1,0 +1,148 @@
+/* ELEMENT */
+
+.contact {
+    padding-top: 20vh;
+}
+
+/* SECTION CONTACT */
+
+.mv-section-contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+}
+
+/* CONTACT HEADER */
+
+.contact-header {
+    background: var(--second-color);
+    padding: 15vh 0 35vh 15vh;
+}
+
+.contact-header > h2  {
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.contact-header > p {
+    font-size: var(--big-text);
+    padding-top: 2vh;
+    width: 50vw;
+}
+
+
+@media screen and (max-width: 1280px){
+    .contact-header {
+        padding: 15vh 5vh 15vh 5vh;
+    }
+    .contact-header > h2 {
+        font-size: 9vw;
+    }
+    .contact-header > p {
+        width: 80vw;
+    }
+}
+
+/* CONTACT CARD */
+
+.contact-card {
+    align-self: center;
+    background: var(--white);
+    -webkit-box-shadow: 0 1px 10px 1px rgba(63,59,59,0.4);
+    box-shadow: 0 1px 10px 1px rgba(63,59,59,0.4);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    transform: translateY(-50%);
+    width: 50vw;
+}
+
+.card-column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6%;
+    width: 50%;
+}
+
+@media screen and (max-width: 1280px){
+    .contact-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        transform: translateY(-5%);
+        width: 80vw;
+    }
+    .card-column {
+        padding: 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px){
+    .contact-card {
+        width: 65vw;
+    }
+}
+
+@media screen and (max-height: 700px){
+    .contact-card {
+        transform: translateY(-40%);
+    }
+}
+
+/* FORM */
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form h1 {
+    padding-bottom: 4vh;
+}
+
+form input, textarea {
+    background: transparent;
+    border-bottom: 1px solid var(--grey);
+    font-family: var(--text-font);
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+form input[type='text']:focus, [type='number']:focus, [type='date']:focus, [type='time']:focus, textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+form button {
+    background: var(--second-color);
+    border-radius: 6%;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 22px;
+    padding: 12px;
+    width: auto;
+}
+
+/* LEAFLET MAP */
+
+.leaflet-container {
+    height: 40vh;
+    margin-top: 3vh;
+    width: 100%;
+    z-index: 100;
+}
+
+

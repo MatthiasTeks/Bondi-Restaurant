@@ -1,0 +1,60 @@
+.mv-section-home {
+    background-image: url("../../assets/cook-mobile.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home-content {
+    align-items: center;
+    animation: fadeIn 1s 0.5s ease-in forwards;
+    background: #00041136;
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 50%;
+    opacity: 0;
+    padding: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+}
+
+.home-content > img {
+    width: 25%;
+}
+
+.home-content > h2 {
+    animation: textClip 1s 1.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+    color: var(--white);
+    font-size: 4vw;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+@media screen and (min-width: 1280px){
+    .mv-section-home {
+        background-image: url("../../assets/cooktest2.webp");
+    }
+    .home-content > h2 {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .home-content > img {
+        width: 50%;
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    .mv-section-home {
+        background-attachment: scroll;
+    }
+}

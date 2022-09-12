@@ -1,0 +1,167 @@
+/* ELEMENT */
+
+.menu {
+    padding-top: 25vh;
+}
+
+/* SHAPE */
+
+.menu-holder-shape {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.shape-row {
+    animation: shapeMenu 2s ease-in-out 2s forwards;
+    background: var(--second-color);
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: center;
+    position: relative;
+    opacity: 1;
+    width: 100%;
+}
+
+.shape-row > p {
+    align-self: center;
+    color: var(--white);
+    font-size: var(--h2-size);
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+}
+
+.shape-row > svg {
+    position: absolute;
+    transform: translateY(-35%) rotate(70deg);
+    width: 20%;
+}
+
+@media screen and (max-width: 1280px){
+    .shape-row > svg {
+        width: 80%;
+    }
+}
+
+/* SECTION MENU */
+
+.mv-section-menu {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20vh;
+}
+
+.menu-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-column-side {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-desktop {
+    display: flex;
+}
+
+.menu-side-left > svg {
+    transform: translateX(-50%) scale(1.2) rotate(90deg);
+}
+
+.menu-side-right > svg {
+    transform: translateX(50%) scale(1.2);
+}
+
+.menu-img {
+    align-self: flex-start;
+    height: auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 1280px){
+    .mv-section-menu {
+        flex-direction: column;
+    }
+    .menu-column {
+        width: 100%;
+    }
+    .menu-column > svg {
+        display: none;
+    }
+    .menu-desktop {
+        display: none;
+    }
+    .menu-img {
+        width: 100%;
+    }
+}
+
+/* BLOCK */
+
+.menu-block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.menu-block:not(:nth-child(1)) {
+    padding-top: 20vh;
+}
+
+.menu-icon {
+    align-self: center;
+    width: 10%;
+}
+
+.menu-img-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1280px){
+    .menu-block > h3 {
+        padding-top: 5vh;
+    }
+    .menu-icon {
+        width: 20%;
+    }
+    .menu-img-mobile {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* PLATS */
+
+.menu-plat {
+    border-bottom: 1px solid #c1c1c1;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 0;
+    width: 600px;
+}
+
+.plat-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1280px){
+    .menu-plat {
+        width: 90%;
+    }
+    .menu-plat > p {
+        padding-top: 2vh;
+    }
+}
+
+
+

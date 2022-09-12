@@ -1,0 +1,24 @@
+.merch-card {
+    align-items: center;
+    background: url("../../../assets/chief.webp");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 220px;
+    padding: 12px;
+    position: relative;
+    width: 300px;
+}
+
+.merch-card p {
+    bottom: -30%;
+    position: absolute;
+}
+
+.border-left {
+    background-image: url("../../../assets/border-left.webp");
+}
+
+.border-right {
+    background-image: url("../../../assets/border-right.webp");
+}

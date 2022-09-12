@@ -1,0 +1,120 @@
+/* SECTION FOOTER */
+
+.mv-section-footer {
+    align-items: center;
+    background: var(--grey);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1280px) {
+    .mv-section-footer {
+        position: inherit;
+        overflow: auto;
+    }
+}
+
+.mv-section-footer > img {
+    transform: rotate(160deg) translate(125%, 5%);
+    position: relative;
+    width: 15vw;
+}
+
+@media screen and (max-width: 1280px){
+    .mv-section-footer {
+        flex-direction: column;
+    }
+    .mv-section-footer > img {
+        display: none;
+    }
+}
+
+/* FOOTER LOGO */
+
+.footer-logo > img {
+    width: 15vw;
+}
+
+@media screen and (max-width: 1280px){
+    .footer-logo > img {
+        width: 75vw;
+    }
+}
+
+/* FOOTER NAV */
+
+.footer-nav > ul > a > li {
+    color: var(--white);
+    cursor: pointer;
+    font-family: var(--title-font);
+    font-weight: lighter;
+    padding: 2vh;
+}
+
+@media screen and (max-width: 1280px) {
+    .footer-nav > ul > li {
+        text-align: center;
+    }
+}
+
+/* FOOTER SOCIAL */
+
+.footer-social > a > svg {
+    color: var(--white);
+    cursor: pointer;
+    font-size: 3vh;
+    transition: color 0.5s ease-in-out;
+    margin: 6px;
+}
+
+.footer-social > a > svg:hover {
+    color: var(--second-color);
+}
+
+@media screen and (max-width: 1280px){
+    .footer-social > a > svg {
+        font-size: 4vh;
+    }
+}
+
+/* FOOTER COPYRIGHT */
+
+.footer-copyright {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 12px;
+    position: absolute;
+    width: 100%;
+}
+
+.footer-copyright > p {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.footer-copyright > p > a {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1280px){
+    .footer-copyright {
+        font-size: 12px;
+        padding-top: 5vh;
+        position: relative;
+        text-align: center;
+        right: 0;
+    }
+    .footer-copyright > a {
+        font-size: 12px;
+    }
+}
+

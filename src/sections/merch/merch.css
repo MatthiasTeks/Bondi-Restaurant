@@ -1,0 +1,117 @@
+/* SECTION MERCH */
+
+.mv-section-merch {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20vh 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mv-section-merch h2 {
+    text-align: center;
+    width: 50%;
+}
+
+@media screen and (max-width: 1280px){
+    .mv-section-merch {
+        overflow: auto;
+    }
+    .mv-section-merch h2 {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* CARDS */
+
+.merch-holder-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10vh;
+    width: 80%;
+}
+
+@media screen and (max-width: 1280px){
+    .merch-holder-cards {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .merch-holder-cards > .merch-card:not(:first-of-type) {
+        margin-top: 20vh;
+    }
+}
+
+/* CONTENT */
+
+.merch-content {
+    background: var(--second-color);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 35vh;
+    width: 100%;
+}
+
+.merch-content img {
+    transform: translateY(-5vh);
+    width: 40%;
+}
+
+.content-holder {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8vw;
+}
+
+.content-holder * {
+    color: var(--black);
+}
+
+.content-holder h3 {
+    font-weight: 500;
+    font-size: var(--h2-size);
+}
+
+.content-holder > p {
+    font-size: var(--big-text);
+    padding-top: 2vh;
+}
+
+.content-holder ul {
+    padding-top: 5vh;
+    transform: translateX(5vw);
+}
+
+.content-holder li {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1vh;
+}
+
+.content-holder li > svg {
+    font-size: 22px;
+    margin-right: 1vw;
+}
+
+
+@media screen and (max-width: 1280px){
+    .merch-content {
+        flex-direction: column;
+    }
+    .merch-content img {
+        transform: inherit;
+        padding-top: 5vh;
+        width: 100%;
+    }
+    .content-holder h3 {
+        font-weight: 600;
+        padding-top: 5vh;
+    }
+}

@@ -1,0 +1,45 @@
+/* SECTION SCHEDULES */
+
+.mv-section-schedules {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media screen and (max-width: 1280px){
+    .mv-section-schedules {
+        overflow: auto;
+    }
+}
+
+/* CONTENT */
+
+.schedules-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+/* CARDS */
+
+.schedules-cards {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5vh;
+    width: 50%;
+}
+
+@media screen and (max-width: 1280px){
+    .schedules-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+}

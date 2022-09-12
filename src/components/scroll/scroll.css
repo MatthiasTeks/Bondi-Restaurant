@@ -1,0 +1,35 @@
+.mv-scroll {
+    animation: fadeIn 1s 2s ease-in forwards;
+    align-items: center;
+    bottom: 10%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    transition: all 1s ease-in;
+    transform: translateX(-50%);
+}
+
+.mv-scroll > p {
+    color: var(--white);
+    margin-bottom: 1vh;
+}
+
+.mv-scroll > svg {
+    animation: arrowPulse 1s cubic-bezier(0.45, 0.11, 0.68, 0.34) infinite;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 800px){
+    .mv-scroll {
+        bottom: 20%;
+    }
+}
+
+@media screen and (max-height: 700px){
+    .mv-scroll {
+        bottom: 10%;
+    }
+}

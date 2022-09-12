@@ -1,0 +1,9 @@
+.mv-comp-filter {
+    background: var(--black);
+    height: 100%;
+    top: 0;
+    position: fixed;
+    opacity: 0.4;
+    width: 100%;
+    z-index: 102;
+}

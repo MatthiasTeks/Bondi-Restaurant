@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+
+:root {
+    --primary-color: #95190C;
+    --second-color: #f8cc1b;
+
+    --white: #FDF7FA;
+    --black: #000411;
+    --grey: #3f3b3b;
+
+    --title-font: 'Roboto Flex', sans-serif;
+    --text-font: 'Lato', sans-serif;
+
+    --h1-size: calc(0.75em + 1.75vw);
+    --h2-size: calc(0.75em + 1.5vw);
+    --h3-size: calc(0.75em + 1.10vw);
+    --h4-size: calc(0.75em + 0.80vw);
+    --big-text: calc(0.75em + 0.45vw);
+    --text-size: calc(0.75em + 0.25vw);
+    --text-min-size: calc(0.75em + 0.25vw);
+}
+
+@media screen and (max-width: 1280px){
+    :root {
+        --h1-size: calc(1.25em + 1.75vw);
+        --h2-size: calc(1.25em + 1.5vw);
+        --h3-size: calc(1.25em + 1.10vw);
+        --h4-size: calc(1.25em + 0.80vw);
+        --big-text: calc(1.10em + 0.45vw);
+        --text-size: calc(1em + 0.25vw);
+        --text-min-size: calc(1em + 0.25vw);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--white);
+}
+
+h1, h2, h3, h4, p, a, li, div {
+    color: var(--black);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--title-font);
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-size: var(--h2-size);
+    font-weight: 300;
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+h4 {
+    font-size: var(--h4-size);
+}
+
+p, a, li {
+    font-family: var(--text-font);
+    font-size: var(--text-size);
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+svg {
+    color: var(--white);
+}
+
+@media screen and (max-width: 1280px){
+    html, body {
+        overflow: auto;
+    }
+}
+
+/* using for white text white half yellow background */
+
+#text {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#text:before {
+    background: var(--second-color);
+    content: "";
+    height: 10px;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* using for white text on yellow background */
+
+#text-white {
+    color: var(--white);
+    font-weight: bold;
+}
+
+/* GLOBAL KEYFRAMES */
+
+@keyframes arrowPulse {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(1vh);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes textClip {
+    from {
+        clip-path: polygon(0% 100%, 100% 100%,100% 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0,100% 100%, 0% 100%);
+    }
+}
+
+@keyframes textClipReverse {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
